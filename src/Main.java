@@ -1,6 +1,7 @@
 import componentes.Ingrediente;
 import componentes.Medallon;
 import hamburguesas.HamburguesaDoble;
+import hamburguesas.HamburguesaFlex;
 import hamburguesas.HamburguesaSimple;
 
 public class Main {
@@ -32,6 +33,24 @@ public class Main {
         contradiccionIdeologica.setIngrediente1(lechugaTomate);
         contradiccionIdeologica.setIngrediente2(bacon);
         System.out.println("El precio final de contradiccionIdeologica es:" + contradiccionIdeologica.calcularPrecioTotal());
+
+
+        System.out.println("Probando las hamburguesas Flex con ejemplos");
+
+        // Creando hamburguesas Flex
+        HamburguesaFlex triplePolloCuadrupleCheedarCebolla = new HamburguesaFlex(3000);
+        triplePolloCuadrupleCheedarCebolla.agregarMedallon(pollo);
+        triplePolloCuadrupleCheedarCebolla.agregarMedallon(pollo);
+        triplePolloCuadrupleCheedarCebolla.agregarMedallon(pollo);
+        triplePolloCuadrupleCheedarCebolla.agregarIngrediente(cheddar);
+        triplePolloCuadrupleCheedarCebolla.agregarIngrediente(cheddar);
+        triplePolloCuadrupleCheedarCebolla.agregarIngrediente(cheddar);
+        triplePolloCuadrupleCheedarCebolla.agregarIngrediente(cheddar);
+        triplePolloCuadrupleCheedarCebolla.agregarIngrediente(cebolla);
+        System.out.println("La triplePolloCuadrupleCheedarCebolla sale " + triplePolloCuadrupleCheedarCebolla.calcularPrecioTotal() );
+
+        System.out.println("Si la terminás te llevás un Hepatalgina gratis :)");
+
 
 
 
